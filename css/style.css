@@ -499,6 +499,12 @@ select:focus, input[type="search"]:focus { border-color: var(--accent); }
 .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; display: block; }
 .gallery figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
 
+.sources { margin: 8px 4px 0; }
+.sources h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+.sources ul { margin: 0; padding-left: 18px; }
+.sources li { font-size: 13px; line-height: 1.8; }
+.sources a { color: var(--muted); }
+
 .to-tree { text-align: center; margin-top: 28px; }
 
 /* ---------- Мобільні ---------- */

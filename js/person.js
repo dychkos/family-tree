@@ -41,6 +41,7 @@
   const bio = (p.bio || "").split(/\n\s*\n/).filter(s => s.trim());
   const events = p.events || [];
   const gallery = p.gallery || [];
+  const sources = (p.sources || []).filter(src => /^https?:\/\//.test(src.url || ""));
 
   main.innerHTML = `
     <section class="hero">
@@ -87,11 +88,16 @@
     </section>` : ""}
 
     ${gallery.length ? `<section class="panel">
-      <h2>Світлини</h2>
+      <h2>Світлини й документи</h2>
       <div class="gallery">${gallery.map(g => `<figure>
         <a href="${esc(g.src)}" target="_blank" rel="noopener"><img src="${esc(g.src)}" alt="${esc(g.caption || "")}" loading="lazy"></a>
         ${g.caption ? `<figcaption>${esc(g.caption)}</figcaption>` : ""}
       </figure>`).join("")}</div>
+    </section>` : ""}
+
+    ${sources.length ? `<section class="sources">
+      <h3>Джерела</h3>
+      <ul>${sources.map(src => `<li><a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title || src.url)} ↗</a></li>`).join("")}</ul>
     </section>` : ""}
 
     <p class="to-tree"><a href="${FT.treeUrl(p)}">Показати в дереві →</a></p>
