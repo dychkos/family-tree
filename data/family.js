@@ -94,7 +94,7 @@ window.FAMILY = {
       firstName: "Любов", lastName: "Дичко", patronymic: "Василівна", maidenName: "Авраменко",
       gender: "f", fatherId: "avramenko-vasyl", motherId: "avramenko-arkseniia",
       birth: { date: "1949-05-15" },
-      death: { date: "2023-08-16" }
+      death: { date: "2024-08-16" }
     },
     {
       id: "dychko-volodymyr",
