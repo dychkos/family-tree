@@ -284,7 +284,7 @@ window.FAMILY = {
     },
     {
       id: "chernukha-nadiia",
-      firstName: "Надія", lastName: "Чернуха", patronymic: "Михайлівна",
+      firstName: "Надія", lastName: "Дяченко", patronymic: "Михайлівна", maidenName: "Чернуха",
       gender: "f",
       facts: { "Місце проживання (1944–1945)": "с. Єлизаветівка, Новокандаківська сільрада, Снігурівський район" }
     },
