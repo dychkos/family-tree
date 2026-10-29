@@ -84,13 +84,17 @@ window.FAMILY = {
     // Батьки Анатолія та його брат і сестра
     {
       id: "dychko-viktor",
-      firstName: "Віктор", lastName: "Дичко",
-      gender: "m",
+      photo: "photos/dychko-viktor.jpg",
+      gallery: [{ src: "photos/docs/dychko-viktor-liubov.jpg", caption: "Віктор і Любов Дичко" }],
+      firstName: "Віктор", lastName: "Дичко", patronymic: "Гаврилович",
+      gender: "m", fatherId: "dychko-havrylo", motherId: "dychko-vasylyna",
       birth: { date: "1944-09-05" },
       spouses: [{ id: "dychko-liubov" }]
     },
     {
       id: "dychko-liubov",
+      photo: "photos/dychko-liubov.jpg",
+      gallery: [{ src: "photos/docs/dychko-viktor-liubov.jpg", caption: "Віктор і Любов Дичко" }],
       firstName: "Любов", lastName: "Дичко", patronymic: "Василівна", maidenName: "Авраменко",
       gender: "f", fatherId: "avramenko-vasyl", motherId: "avramenko-arkseniia",
       birth: { date: "1949-05-15" },
@@ -194,6 +198,17 @@ window.FAMILY = {
     },
 
     // Прадіди
+    {
+      id: "dychko-havrylo",
+      firstName: "Гаврило", lastName: "Дичко", patronymic: "Іванович",
+      gender: "m",
+      spouses: [{ id: "dychko-vasylyna" }]
+    },
+    {
+      id: "dychko-vasylyna",
+      firstName: "Василина", lastName: "Дичко", patronymic: "Григорівна", maidenName: "Кавун",
+      gender: "f"
+    },
     {
       id: "avramenko-vasyl",
       firstName: "Василь", lastName: "Авраменко", patronymic: "Кирилович",
